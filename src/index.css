@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Prevent layout shifts by ensuring consistent spacing */
+.layout-stable {
+  /* Reserve space for dynamic content */
+  min-height: 400px;
+}
+
+/* Smooth transitions for layout changes */
+.layout-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Improve skeleton loading animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
